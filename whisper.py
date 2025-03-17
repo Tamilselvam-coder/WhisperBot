@@ -55,16 +55,16 @@ async def help_callback(client, callback_query):
     help_text = (
         "The other way to use me is to write the inline query by yourself.\n\n"
         "The format should be in this arrangement:\n\n"
-        "`@LockTextBot your whisper @username`\n\n"
+        "`@shuuuutarbot your whisper @username`\n\n"
         "Now I'll split the format into 3 parts and explain each part of it:\n\n"
-        "1. `@LockTextBot`:\n"
+        "1. `@shuuuutarbot`:\n"
         "   This is my username; it should be at the beginning of the inline query so I'll know that you are using me and not another bot.\n\n"
         "2. `whisper message`:\n"
         "   This is the whisper that will be sent to the target user. Replace `your whisper` with your actual message.\n\n"
         "3. `@username`:\n"
         "   You should replace this with the target's username so the bot will know which user should receive your whisper message.\n\n"
         "Example:\n"
-        "`@LockTextBot hello this is a test @BisnuRay`\n\n"
+        "`@shuuuutarbot hello this is a test @BisnuRay`\n\n"
         "📎 The bot works in groups and the target user should be in the same group as you.\n\n"
         "What are you waiting for?! Try me now 😉"
     )
@@ -110,7 +110,7 @@ async def answer(client, inline_query):
                     input_message_content=InputTextMessageContent(
                         "How to Send Secret Message\n\n"
                         "Include the recipient's @username or user ID at the end of your message.\n\n"
-                        "Example: @LockTextBot Hello there! @username"
+                        "Example: @shuuuutarbot Hello there! @username"
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [[InlineKeyboardButton("Start Bot", url=f"https://t.me/{bot_username}?start=inline_help")]]
@@ -192,7 +192,7 @@ async def answer(client, inline_query):
                     input_message_content=InputTextMessageContent(
                         "How to Send Secret Message\n\n"
                         "Include the recipient's @username or user ID at the end of your message.\n\n"
-                        "Example: @LockTextBot Hello there! @username"
+                        "Example: @shuuuutarbotn Hello there! @username"
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [[InlineKeyboardButton("Start Bot", url=f"https://t.me/{bot_username}?start=inline_help")]]
